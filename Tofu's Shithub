@@ -1,0 +1,286 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Stuff = Instance.new("ScreenGui")
+local Stuff2 = Instance.new("Frame")
+local whatsthenameo = Instance.new("TextLabel")
+local Scripts = Instance.new("Frame")
+local InfiniteYield = Instance.new("TextButton")
+local UIGridLayout = Instance.new("UIGridLayout")
+local FatesAdmin = Instance.new("TextButton")
+local ProtonAdmin = Instance.new("TextButton")
+local VGHub = Instance.new("TextButton")
+local BackdoorFinder = Instance.new("TextButton")
+local PendulumHub = Instance.new("TextButton")
+local BetterBypasser = Instance.new("TextButton")
+local Closethegui = Instance.new("TextButton")
+
+--Properties:
+
+Stuff.Name = "Stuff"
+Stuff.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Stuff.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Stuff2.Name = "Stuff2"
+Stuff2.Parent = Stuff
+Stuff2.AnchorPoint = Vector2.new(0.5, 0.5)
+Stuff2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Stuff2.BackgroundTransparency = 0.500
+Stuff2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Stuff2.BorderSizePixel = 0
+Stuff2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Stuff2.Size = UDim2.new(0, 550, 0, 400)
+
+whatsthenameo.Name = "whats the name :o"
+whatsthenameo.Parent = Stuff2
+whatsthenameo.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+whatsthenameo.BackgroundTransparency = 0.500
+whatsthenameo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+whatsthenameo.BorderSizePixel = 0
+whatsthenameo.Size = UDim2.new(0, 550, 0, 25)
+whatsthenameo.Font = Enum.Font.Gotham
+whatsthenameo.Text = "> Tofu's shithub"
+whatsthenameo.TextColor3 = Color3.fromRGB(255, 255, 255)
+whatsthenameo.TextScaled = true
+whatsthenameo.TextSize = 14.000
+whatsthenameo.TextWrapped = true
+whatsthenameo.TextXAlignment = Enum.TextXAlignment.Left
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Stuff2
+Scripts.AnchorPoint = Vector2.new(0.5, 0.5)
+Scripts.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Scripts.BackgroundTransparency = 0.750
+Scripts.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BorderSizePixel = 2
+Scripts.Position = UDim2.new(0.5, 0, 0.514999986, 0)
+Scripts.Size = UDim2.new(0, 500, 0, 337)
+
+InfiniteYield.Name = "Infinite Yield"
+InfiniteYield.Parent = Scripts
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(0.243000001, 0, 0.258160233, 0)
+InfiniteYield.Size = UDim2.new(0, 200, 0, 50)
+InfiniteYield.Font = Enum.Font.Gotham
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.TextScaled = true
+InfiniteYield.TextSize = 14.000
+InfiniteYield.TextWrapped = true
+InfiniteYield.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+UIGridLayout.Parent = Scripts
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+FatesAdmin.Name = "Fates Admin"
+FatesAdmin.Parent = Scripts
+FatesAdmin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FatesAdmin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FatesAdmin.BorderSizePixel = 0
+FatesAdmin.Size = UDim2.new(0, 200, 0, 50)
+FatesAdmin.Font = Enum.Font.Gotham
+FatesAdmin.Text = "Fates Admin"
+FatesAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+FatesAdmin.TextScaled = true
+FatesAdmin.TextSize = 14.000
+FatesAdmin.TextWrapped = true
+FatesAdmin.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+end)
+
+ProtonAdmin.Name = "Proton Admin"
+ProtonAdmin.Parent = Scripts
+ProtonAdmin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ProtonAdmin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProtonAdmin.BorderSizePixel = 0
+ProtonAdmin.Size = UDim2.new(0, 200, 0, 50)
+ProtonAdmin.Font = Enum.Font.Gotham
+ProtonAdmin.Text = "Proton Admin"
+ProtonAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+ProtonAdmin.TextScaled = true
+ProtonAdmin.TextSize = 14.000
+ProtonAdmin.TextWrapped = true
+ProtonAdmin.MouseButton1Click:Connect(function()
+	_G.UI_Id = "default" --set this to "default" for the default ui
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/DigitalityScripts/roblox-scripts/main/Proton%20Free'))()
+end)
+
+VGHub.Name = "VG Hub"
+VGHub.Parent = Scripts
+VGHub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+VGHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VGHub.BorderSizePixel = 0
+VGHub.Size = UDim2.new(0, 200, 0, 50)
+VGHub.Font = Enum.Font.Gotham
+VGHub.Text = "VG Hub"
+VGHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+VGHub.TextScaled = true
+VGHub.TextSize = 14.000
+VGHub.TextWrapped = true
+VGHub.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+BackdoorFinder.Name = "Backdoor Finder"
+BackdoorFinder.Parent = Scripts
+BackdoorFinder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BackdoorFinder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BackdoorFinder.BorderSizePixel = 0
+BackdoorFinder.Size = UDim2.new(0, 200, 0, 50)
+BackdoorFinder.Font = Enum.Font.Gotham
+BackdoorFinder.Text = "Backdoor Finder"
+BackdoorFinder.TextColor3 = Color3.fromRGB(255, 255, 255)
+BackdoorFinder.TextScaled = true
+BackdoorFinder.TextSize = 14.000
+BackdoorFinder.TextWrapped = true
+BackdoorFinder.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua"))()
+end)
+
+PendulumHub.Name = "Pendulum Hub"
+PendulumHub.Parent = Scripts
+PendulumHub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PendulumHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PendulumHub.BorderSizePixel = 0
+PendulumHub.Size = UDim2.new(0, 200, 0, 50)
+PendulumHub.Font = Enum.Font.Gotham
+PendulumHub.Text = "Pendulum Hub"
+PendulumHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+PendulumHub.TextScaled = true
+PendulumHub.TextSize = 14.000
+PendulumHub.TextWrapped = true
+PendulumHub.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+end)
+
+BetterBypasser.Name = "BetterBypasser"
+BetterBypasser.Parent = Scripts
+BetterBypasser.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BetterBypasser.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BetterBypasser.BorderSizePixel = 0
+BetterBypasser.Size = UDim2.new(0, 200, 0, 50)
+BetterBypasser.Font = Enum.Font.Gotham
+BetterBypasser.Text = "BetterBypasser"
+BetterBypasser.TextColor3 = Color3.fromRGB(255, 255, 255)
+BetterBypasser.TextScaled = true
+BetterBypasser.TextSize = 14.000
+BetterBypasser.TextWrapped = true
+BetterBypasser.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/synnyyy/synergy/additional/betterbypasser", true))({
+		Method = 1, -- Method 1 is the main method. Method two is emojis. Method 3 is full transparency, no special symbols. Method 3 has been improved!
+		Keybind = "F", -- Usually defaulted to F. You can change this keybind by replacing the string with a letter. Works for uppercase and lowercase.
+		ShowMethodDictionary = true -- Shows you the full list of words that you can say with the method. Press FN + F9 to see this dictionary.
+	})
+
+
+	-- https://discord.gg/RXUwZHjNKm
+	-- This page will be always updated no matter what.
+	-- BetterBypasser does not log anything.
+
+	-- If you want the new update or the new invis method, please change "Method" to 3
+	-- Want to see the words for Method 1? Please view the console to do so. We are planning to change this to a UI where it shows you the words instead
+end)
+
+Closethegui.Name = "Close the gui"
+Closethegui.Parent = Scripts
+Closethegui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Closethegui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Closethegui.BorderSizePixel = 0
+Closethegui.Size = UDim2.new(0, 200, 0, 50)
+Closethegui.Font = Enum.Font.Gotham
+Closethegui.Text = "X"
+Closethegui.TextColor3 = Color3.fromRGB(255, 0, 0)
+Closethegui.TextScaled = true
+Closethegui.TextSize = 14.000
+Closethegui.TextWrapped = true
+
+-- Scripts:
+
+local function RBKW_fake_script() -- whatsthenameo.Gaybow script 
+	local script = Instance.new('LocalScript', whatsthenameo)
+
+	local text = script.Parent
+	
+	while wait() do
+		text.TextColor3 = Color3.fromRGB(255)
+		wait()
+		text.TextColor3 = Color3.fromRGB(255,128)
+		wait()
+		text.TextColor3 = Color3.fromRGB(255,255)
+		wait()
+		text.TextColor3 = Color3.fromRGB(128,255)
+		wait()
+		text.TextColor3 = Color3.fromRGB(0,255)
+		wait()
+		text.TextColor3 = Color3.fromRGB(0,255,128)
+		wait()
+		text.TextColor3 = Color3.fromRGB(0,255,255)
+		wait()
+		text.TextColor3 = Color3.fromRGB(0,128,255)
+		wait()
+		text.TextColor3 = Color3.fromRGB(0,0,255)
+		wait()
+		text.TextColor3 = Color3.fromRGB(128,0,255)
+		wait()
+		text.TextColor3 = Color3.fromRGB(255,0,255)
+		wait()
+		text.TextColor3 = Color3.fromRGB(255,0,128)
+		wait()
+	end
+end
+coroutine.wrap(RBKW_fake_script)()
+local function WIUQOU_fake_script() -- Closethegui.The close script 
+	local script = Instance.new('LocalScript', Closethegui)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(WIUQOU_fake_script)()
+local function QJGBE_fake_script() -- Stuff2.Drag script <.< 
+	local script = Instance.new('LocalScript', Stuff2)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(QJGBE_fake_script)()
